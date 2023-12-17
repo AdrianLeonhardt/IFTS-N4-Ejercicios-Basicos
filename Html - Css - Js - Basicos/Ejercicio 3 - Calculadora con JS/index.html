@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora IFTS</h1>
+    </header>
+
+    <div id="calculadora">
+        <form name="calcu_ifts" class="cuerpo">
+            <input type="textfield" name="visor" value="" autocomplete="off " readonly class="visor">
+            <br>
+            <input type="reset" value="C" class="reset">
+            <input type="button" value="(" onclick="document.calcu_ifts.visor.value+='('">
+            <input type="button" value=")" onclick="document.calcu_ifts.visor.value+=')'">
+            <input type="button" value="%" onclick="document.calcu_ifts.visor.value+='%'">  
+            <br>
+            <input type="button" value="7" onclick="document.calcu_ifts.visor.value+='7'">
+            <input type="button" value="8" onclick="document.calcu_ifts.visor.value+='8'">
+            <input type="button" value="9" onclick="document.calcu_ifts.visor.value+='9'">
+            <input type="button" value="+" onclick="document.calcu_ifts.visor.value+='+'">
+            <br>
+            <input type="button" value="4" onclick="document.calcu_ifts.visor.value+='4'">
+            <input type="button" value="5" onclick="document.calcu_ifts.visor.value+='5'">
+            <input type="button" value="6" onclick="document.calcu_ifts.visor.value+='6'">
+            <input type="button" value="-" onclick="document.calcu_ifts.visor.value+='-'">
+            <br>
+            <input type="button" value="1" onclick="document.calcu_ifts.visor.value+='1'">
+            <input type="button" value="2" onclick="document.calcu_ifts.visor.value+='2'">
+            <input type="button" value="3" onclick="document.calcu_ifts.visor.value+='3'">
+            <input type="button" value="x" onclick="document.calcu_ifts.visor.value+='*'">
+            <br>
+            <input type="button" value="0" onclick="document.calcu_ifts.visor.value+='0'">
+            <input type="button" value="." onclick="document.calcu_ifts.visor.value+='.'">
+            <input type="button" value="=" onclick="document.calcu_ifts.visor.value = eval(document.calcu_ifts.visor.value)">
+            <input type="button" value="+" onclick="document.calcu_ifts.visor.value+='+'">
+        </form>
+    </div>
+
+    <footer>
+        <h2>by Leonhardt Adrian</h2>
+    </footer>
+    
+</body>
+</html>
